@@ -1,4 +1,4 @@
-gsap.registerPlugin(CustomEase);
+
 
 function resetWebflow(data) {
   let dom = $(new DOMParser().parseFromString(data.next.html, "text/html")).find("html");
