@@ -33,7 +33,7 @@ export default class Slider {
 				},
 				991: {
 					slidesPerView: 1.75,
-					spaceBetween: 100,
+					spaceBetween: 800,
 				},
 			},
 		});
