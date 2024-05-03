@@ -32,8 +32,8 @@ export default class Slider {
 					spaceBetween: 20,
 				},
 				991: {
-					slidesPerView: 1.75,
-					spaceBetween: 800,
+					slidesPerView: 4.75,
+					spaceBetween: 100,
 				},
 			},
 		});
