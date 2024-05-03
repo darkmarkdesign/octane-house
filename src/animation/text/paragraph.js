@@ -14,7 +14,7 @@ export default class SlideParagraph {
 				paused: true,
 				scrollTrigger: {
 					trigger: el,
-					start: 'top 90%',
+					start: 'top 80%',
 					onEnter: () => {
 						tl.play();
 					},
