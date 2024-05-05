@@ -47,7 +47,7 @@ export default function homeEnter(container) {
 			el.heroLine,
 			{
 				width: '0%',
-				duration: 2,
+				duration: 1.65,
 				ease: 'expo.inOut',
 			},
 			'<-0.15',
@@ -55,10 +55,10 @@ export default function homeEnter(container) {
 		.from(
 			el.text.querySelectorAll('.line_inner'),
 			{
-				yPercent: 100,
+				yPercent: 150,
 				duration: 1,
 				ease: 'power3.out',
-				stagger: { each: 0.1 },
+				stagger: { each: 0.041 },
 			},
 			'<+0.7',
 		)
@@ -74,10 +74,10 @@ export default function homeEnter(container) {
 		.from(
 			el.heroBtm,
 			{
-				yPercent: 100,
+				yPercent: 150,
 				duration: 1.2,
 				ease: 'power3.out',
-				stagger: { each: 0.15 },
+				stagger: { each: 0.05 },
 			},
 			'<+.2',
 		);
