@@ -9,6 +9,7 @@ export default function aboutEnter(container) {
 		transition: document.querySelector('.transition'),
 		whipe: container.querySelectorAll('.trans_whipe'),
 		img: container.querySelector('.detail_img'),
+		stars: container.querySelectorAll('.hero_stars'),
 	};
 	gsap.set(el.transition, { display: 'block' });
 
