@@ -21,10 +21,10 @@ export default class SlideParagraph {
 				},
 			});
 			tl.from(el.querySelectorAll('.line_inner'), {
-				yPercent: 100,
+				yPercent: 150,
 				duration: 1.1,
 				ease: 'power3.out',
-				stagger: 0.1,
+				stagger: 0.051,
 			});
 		});
 	}
