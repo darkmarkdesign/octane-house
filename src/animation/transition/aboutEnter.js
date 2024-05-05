@@ -27,6 +27,16 @@ export default function aboutEnter(container) {
 			ease: 'expo.inOut',
 		})
 		.from(
+			el.head.querySelectorAll('.char'),
+			{
+				yPercent: 100,
+				duration: 1.2,
+				ease: 'power4.out',
+				stagger: { each: 0.08 },
+			},
+			'<+1.2',
+		)		
+		.from(
 			container,
 			{
 				y: '100vh',
@@ -44,16 +54,7 @@ export default function aboutEnter(container) {
 			},
 			'<+1',
 		)
-		.from(
-			el.head.querySelectorAll('.char'),
-			{
-				yPercent: 100,
-				duration: 1.2,
-				ease: 'power4.out',
-				stagger: { each: 0.08 },
-			},
-			'<+1.2',
-		)
+	
 		.from(
 			el.heroLine,
 			{
