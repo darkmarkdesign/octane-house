@@ -16,8 +16,9 @@ export default class SlideUp {
 					trigger: el,
 					start: 'top 97%',
 				},
-				yPercent: 100,
-				duration: 1.25,
+				yPercent: 150,
+				duration: 1.15,
+				stagger: { each: 0.05 },
 				ease: 'power3.out',
 			});
 			// ScrollTrigger.refresh();
