@@ -52,7 +52,7 @@ export default function servicesEnter(container) {
 				ease: 'power4.out',
 				stagger: { each: 0.08 },
 			},
-			'<+1.2',
+			'1.85',
 		)
 		.from(
 			el.heroLine,
