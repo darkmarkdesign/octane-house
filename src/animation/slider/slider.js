@@ -16,7 +16,7 @@ export default class Slider {
 			slideActiveClass: 'slide-active',
 			centeredSlides: true,
 			parallax: true,
-			speed: 750,
+			speed: 950,
 			loop: true,
 			navigation: {
 				nextEl: '.swiper_button_next',
