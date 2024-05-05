@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-export default function homeEnter(container) {
+export default function servicesEnter(container) {
 	const el = {
 		head: container.querySelector('[data-animation="trans-head"]'),
 		text: container.querySelector('[data-animation="trans-txt"]'),
