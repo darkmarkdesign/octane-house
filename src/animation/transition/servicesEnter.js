@@ -35,6 +35,16 @@ export default function servicesEnter(container) {
 			},
 			'<',
 		)
+		.from(
+			el.head.querySelectorAll('.char'),
+			{
+				yPercent: 100,
+				duration: 1.2,
+				ease: 'power4.out',
+				stagger: { each: 0.08 },
+			},
+			'<+0.975',
+		)		
 		.to(
 			el.whipe,
 			{
@@ -44,16 +54,7 @@ export default function servicesEnter(container) {
 			},
 			'<+1',
 		)
-		.from(
-			el.head.querySelectorAll('.char'),
-			{
-				yPercent: 100,
-				duration: 1.2,
-				ease: 'power4.out',
-				stagger: { each: 0.08 },
-			},
-			'1.85',
-		)
+
 		.from(
 			el.heroLine,
 			{
