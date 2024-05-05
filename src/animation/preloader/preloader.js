@@ -88,11 +88,9 @@ export default class Preloader {
 					duration: 1,
 					yPercent: -150,
 					ease: 'power4.out',
-					stagger: {
-					amount: 0.15, 
-					},
-				'<+.3',
-			)
+					stagger: { amount: 0.15 },
+				}, 
+				'<+.3')
 			.to(
 				this.el.preloader,
 				{
