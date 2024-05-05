@@ -43,7 +43,7 @@ export default function aboutEnter(container) {
 				ease: 'power4.out',
 				stagger: { each: 0.08 },
 			},
-			'<',
+			'<+0.6',
 		)		
 
 		.to(
