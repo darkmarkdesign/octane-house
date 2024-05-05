@@ -2,7 +2,7 @@ import gsap from 'gsap';
 
 export default function animationLeave(container) {
 	const transContainer = document.querySelector('.transition');
-	const head = document.querySelector('[data-animation="trans-head"]'),
+	const head = document.querySelector('[data-animation="trans-head"]');
 
 	const tl = gsap.timeline({
 		onComplete: () => {
