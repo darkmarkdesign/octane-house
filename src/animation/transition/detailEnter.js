@@ -2,12 +2,12 @@ import gsap from 'gsap';
 
 export default function detailEnter(container) {
 	const el = {
-		head: container.querySelectorAll('[data-animation="trans-head"]'),
-		text: container.querySelectorAll('[data-animation="trans-txt"]'),
-		detailCap: container.querySelectorAll('[data-animation="trans-sd"]'),
+		head: container.querySelector('[data-animation="trans-head"]'),
+		text: container.querySelector('[data-animation="trans-txt"]'),
+		detailCap: container.querySelector('[data-animation="trans-sd"]'),
 		transition: document.querySelector('.transition'),
 		whipe: container.querySelectorAll('.trans_whipe'),
-		img: container.querySelectorAll('.detail_img'),
+		img: container.querySelector('.detail_img'),
 	};
 
 	gsap.set(el.transition, { display: 'block' });
