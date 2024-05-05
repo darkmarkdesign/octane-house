@@ -5,10 +5,10 @@ export default function workEnter(container) {
 		'.swiper-slide.slide-active',
 	);
 	const el = {
-		head: activeSwiperSlide.querySelector(
+		head: activeSwiperSlide.querySelectorAll(
 			'[data-animation="trans-head"]',
 		),
-		text: activeSwiperSlide.querySelector(
+		text: activeSwiperSlide.querySelectorAll(
 			'[data-animation="trans-txt"]',
 		),
 		transition: document.querySelector('.transition'),
