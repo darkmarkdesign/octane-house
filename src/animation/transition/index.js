@@ -19,6 +19,8 @@ import animationLeave from './animationLeave';
 import homeEnter from './homeEnter';
 import workEnter from './workEnter';
 import detailEnter from './detailEnter';
+import aboutEnter from './aboutEnter'; 
+import servicesEnter from './servicesEnter'; 
 
 export default class Transition {
 	constructor() {
@@ -61,6 +63,80 @@ export default class Transition {
 					},
 					after({ current }) {
 						current.container.classList.remove('is-transition');
+					},
+				},
+				{
+					name: 'about-transition',
+					sync: true,
+					to: {
+						namespace: ['about'],
+					},
+					once({ next }) {
+						new Split();
+						new SlideUp();
+						new SlideParagraph();
+						new Parallax();
+						new Line();
+						new Whipe();
+						new FooterLogo();
+						new Fade();
+						aboutEnter(next.container);
+					},
+					beforeEnter({ next }) {
+						next.container.classList.add('is-transition');
+					},
+					enter: ({ next }) => {
+						return aboutEnter(next.container);
+					},
+					leave({ current }) {
+						return animationLeave(current.container);
+					},
+					after({ next }) {
+						new Parallax();
+						new Whipe();
+						new Line();
+						new SlideUp();
+						new SlideParagraph();
+						new Fade();
+						new FooterLogo();
+						next.container.classList.remove('is-transition');
+					},
+				},
+				{
+					name: 'services-transition',
+					sync: true,
+					to: {
+						namespace: ['services'],
+					},
+					once({ next }) {
+						new Split();
+						new SlideUp();
+						new SlideParagraph();
+						new Parallax();
+						new Line();
+						new Whipe();
+						new FooterLogo();
+						new Fade();
+						servicesEnter(next.container);
+					},
+					beforeEnter({ next }) {
+						next.container.classList.add('is-transition');
+					},
+					enter: ({ next }) => {
+						return servicesEnter(next.container);
+					},
+					leave({ current }) {
+						return animationLeave(current.container);
+					},
+					after({ next }) {
+						new Parallax();
+						new Whipe();
+						new Line();
+						new SlideUp();
+						new SlideParagraph();
+						new Fade();
+						new FooterLogo();
+						next.container.classList.remove('is-transition');
 					},
 				},
 				{
