@@ -54,20 +54,20 @@ export default function workEnter(container) {
 		.from(
 			el.head.querySelectorAll('.char'),
 			{
-				yPercent: 100,
+				yPercent: 150,
 				duration: 1.2,
 				ease: 'power4.out',
-				stagger: { each: 0.035 },
+				stagger: { each: 0.05 },
 			},
 			'<+0.25',
 		)
 		.from(
 			el.text.querySelectorAll('.line_inner'),
 			{
-				yPercent: 100,
+				yPercent: 150,
 				duration: 1,
 				ease: 'power3.out',
-				stagger: { each: 0.1 },
+				stagger: { each: 0.06 },
 			},
 			'<+.25',
 		)
