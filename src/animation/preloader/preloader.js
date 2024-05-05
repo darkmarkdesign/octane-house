@@ -74,17 +74,23 @@ export default class Preloader {
 				this.el.preloaderTxt.querySelectorAll('.char'),
 				{
 					duration: 1,
-					yPercent: -110,
+					yPercent: -150,
 					ease: 'power4.out',
 					stagger: {
 						amount: 0.15,
 					},
 				},
-				'>-.8',
+				'<',
 			)
 			.to(
 				this.el.preloaderNum,
-				{ duration: 0.6, autoAlpha: 0, ease: 'sine.out' },
+				{ 
+					duration: 1,
+					yPercent: -150,
+					ease: 'power4.out',
+					stagger: {
+					amount: 0.15, 
+					},
 				'<+.3',
 			)
 			.to(
