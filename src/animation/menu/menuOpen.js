@@ -9,7 +9,7 @@ export default class MenuOpen {
 			menuStars: document.querySelector('.info_stars'),
 			menuClose: document.querySelector('.info_close_text'),
 			menuBtm: document.querySelectorAll('.info_btm_text'),
-			colTitle: document.querySelector('.colophon_title'),
+			colTitle: document.querySelectorAll('.colophon_title'),
 			colTxt: document.querySelectorAll('.colophon_item_txt'),
 			menuButton: document.querySelector('.nav_link-item.info'),
 			menuBG: document.querySelector('.info_menu_bg'),
