@@ -20,9 +20,9 @@ export default class SlideParagraph {
 					},
 				},
 			});
-			tl.from(el.querySelectorAll('.line_inner'), {
+			tl.from(el.querySelectorAll('.char'), {
 				yPercent: 150,
-				duration: 1.1,
+				duration: 1,
 				ease: 'power3.out',
 				stagger: 0.051,
 			});
