@@ -48,7 +48,7 @@ export default function homeEnter(container) {
 			el.heroLineTop,
 			{
 				xPercent: -100,
-				duration: 1.65,
+				duration: 1,
 				ease: 'expo.inOut',
 			},
 			'>',
@@ -57,7 +57,7 @@ export default function homeEnter(container) {
 			el.heroLineBtm,
 			{
 				xPercent: 100,
-				duration: 1.65,
+				duration: 1,
 				ease: 'expo.inOut',
 			},
 			'<-0.15',
