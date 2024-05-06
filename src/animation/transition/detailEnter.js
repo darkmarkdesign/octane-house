@@ -11,21 +11,11 @@ export default function detailEnter(container) {
 		transition: document.querySelector('.transition'),
 		whipe: container.querySelectorAll('.trans_whipe'),
 		img: container.querySelector('.detail_img'),
-		imgContainer: document.querySelectorAll('[data-animation="img-container"]'),
-		parallaxImg: document.querySelectorAll('[data-animation="parallax"]'),
+		//imgContainer: document.querySelectorAll('[data-animation="img-container"]'),
+		//parallaxImg: document.querySelectorAll('[data-animation="parallax"]'),
 	};
 
 	gsap.set(el.transition, { display: 'block' });
-
-	// const imgScroll = gsap.timeline({
-	//     	scrollTrigger: {
-	//      	 trigger: imgContainer,
-	//      	 start: "top center",
-	//      	 end: "bottom center",
-	//      	 scrub: true,
-	//      	 markers: false
-	//     	}
-	//   });
 
 	const tl = gsap.timeline({
 		onComplete: () => {
@@ -61,7 +51,8 @@ export default function detailEnter(container) {
 		.from(
 			el.head.querySelectorAll('.char'),
 			{
-				yPercent: 100,
+				yPercent: 250,
+				opacity: 0,
 				duration: 1.2,
 				ease: 'power4.out',
 				stagger: { each: 0.035 },
