@@ -1,6 +1,4 @@
 import gsap from 'gsap';
-import SmoothScroll from '../../utils/scroll';
-/* Other Animation Import */
 import Slider from '../slider/slider';
 import Split from '../../utils/split';
 import SmoothScroll from '../../utils/scroll';
