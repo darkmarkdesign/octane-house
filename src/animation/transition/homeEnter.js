@@ -5,7 +5,8 @@ export default function homeEnter(container) {
 		head: container.querySelector('[data-animation="trans-head"]'),
 		text: container.querySelector('[data-animation="trans-txt"]'),
 		heroBtm: container.querySelectorAll('.hero_btm_item'),
-		heroLine: container.querySelector('[data-animation="hero-line"]'),
+		heroLineTop: container.querySelector('[data-animation="hero-line-top"]'),
+		heroLineBtm: container.querySelector('[data-animation="hero-line-btm"]'),
 		transition: document.querySelector('.transition'),
 		stars: container.querySelectorAll('.hero_stars'),
 	};
@@ -44,9 +45,18 @@ export default function homeEnter(container) {
 			'<+1.2',
 		)
 		.from(
-			el.heroLine,
+			el.heroLineTop,
 			{
-				width: '0%',
+				xPercent: -100,
+				duration: 1.65,
+				ease: 'expo.inOut',
+			},
+			'>',
+		)
+		.from(
+			el.heroLineBtm,
+			{
+				xPercent: 100,
 				duration: 1.65,
 				ease: 'expo.inOut',
 			},
