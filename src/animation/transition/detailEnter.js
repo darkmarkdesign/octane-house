@@ -17,15 +17,15 @@ export default function detailEnter(container) {
 
 	gsap.set(el.transition, { display: 'block' });
 
-	const imgScroll = gsap.timeline({
-	    	scrollTrigger: {
-	     	 trigger: imgContainer,
-	     	 start: "top center",
-	     	 end: "bottom center",
-	     	 scrub: true,
-	     	 markers: false
-	    	}
-	  });
+	// const imgScroll = gsap.timeline({
+	//     	scrollTrigger: {
+	//      	 trigger: imgContainer,
+	//      	 start: "top center",
+	//      	 end: "bottom center",
+	//      	 scrub: true,
+	//      	 markers: false
+	//     	}
+	//   });
 
 	const tl = gsap.timeline({
 		onComplete: () => {
