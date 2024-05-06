@@ -1,4 +1,7 @@
 import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import Parallax from '../image/parallax';
+gsap.registerPlugin(ScrollTrigger);
 
 export default function detailEnter(container) {
 	const el = {
@@ -8,9 +11,21 @@ export default function detailEnter(container) {
 		transition: document.querySelector('.transition'),
 		whipe: container.querySelectorAll('.trans_whipe'),
 		img: container.querySelector('.detail_img'),
+		imgContainer: document.querySelectorAll('[data-animation="img-container"]'),
+		parallaxImg: document.querySelectorAll('[data-animation="parallax"]'),
 	};
 
 	gsap.set(el.transition, { display: 'block' });
+
+	const imgScroll = gsap.timeline({
+	    	scrollTrigger: {
+	     	 trigger: imgContainer,
+	     	 start: "top center",
+	     	 end: "bottom center",
+	     	 scrub: true,
+	     	 markers: false
+	    	}
+	  });
 
 	const tl = gsap.timeline({
 		onComplete: () => {
@@ -53,6 +68,8 @@ export default function detailEnter(container) {
 			},
 			'<+0.25',
 		)
+	
+
 		.from(
 			el.detailCap,
 			{
