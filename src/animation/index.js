@@ -11,7 +11,7 @@ export default class Animation {
 	init() {
 		new MenuOpen();
 		new Slider();
-		new draggable();
+		new Draggable();
 		infoHover();
 	}
 }
