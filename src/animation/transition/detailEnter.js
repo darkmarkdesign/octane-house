@@ -62,9 +62,9 @@ export default function detailEnter(container) {
 	
 
 		.from(
-			el.detailCap,
+			el.detailCap.querySelectorAll('.char'),
 			{
-				yPercent: 100,
+				yPercent: 200,
 				duration: 1,
 				ease: 'power3.out',
 				stagger: { each: 0.1 },
