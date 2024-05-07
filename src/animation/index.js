@@ -1,7 +1,7 @@
 import infoHover from './hover/infoHover';
 import Slider from './slider/slider';
 import MenuOpen from './menu/menuOpen';
-import Draggable from './slider/draggable';
+/* import Draggable from './slider/draggable'; */
 /* import detailEnter from './slider/detailEnter'; */
 
 export default class Animation {
@@ -12,7 +12,7 @@ export default class Animation {
 	init() {
 		new MenuOpen();
 		new Slider();
-		new Draggable();
+		/* new Draggable();*/
 		infoHover();
 	}
 }
