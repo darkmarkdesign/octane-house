@@ -2,7 +2,7 @@ import infoHover from './hover/infoHover';
 import Slider from './slider/slider';
 import MenuOpen from './menu/menuOpen';
 import Draggable from './slider/draggable';
-import detailEnter from './slider/detailEnter';
+/* import detailEnter from './slider/detailEnter'; */
 
 export default class Animation {
 	constructor() {
